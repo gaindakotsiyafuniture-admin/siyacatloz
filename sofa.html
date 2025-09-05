@@ -122,6 +122,280 @@
     }
 
 
+
+
+
+
+
+ /* Search Section */
+    .search-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .search-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .search-title {
+      text-align: center;
+      color: #1f2937;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 1rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .search-input:focus {
+      border-color: #f59e0b;
+    }
+
+    .search-btn {
+      background: #f59e0b;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .search-btn:hover {
+      background: #d97706;
+    }
+
+    /* Product Display */
+    .product-result {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .product-result.show {
+      display: block;
+    }
+
+    .product-header {
+      background: linear-gradient(135deg, #1f2937, #374151);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .product-code {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #f59e0b;
+    }
+
+    .product-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product-image {
+      text-align: center;
+    }
+
+    .product-img {
+      width: 100%;
+      max-width: 400px;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .product-name {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 1rem;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .detail-label {
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .detail-value {
+      color: #1f2937;
+      font-weight: 500;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #059669;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #9ca3af;
+      font-size: 1.2rem;
+    }
+
+    .discount-badge {
+      background: #ef4444;
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .warranty-badge {
+      background: #3b82f6;
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .no-result {
+      background: white;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      color: #6b7280;
+      font-size: 1.2rem;
+      display: none;
+    }
+
+    .no-result.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Available Codes Display */
+    .available-codes {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+    }
+
+    .codes-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .codes-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .code-item {
+      background: #f59e0b;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .code-item:hover {
+      background: #d97706;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .search-box {
+        flex-direction: column;
+      }
+
+      .product-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .search-container {
+        padding: 1rem;
+      }
+
+      .search-title {
+        font-size: 1.5rem;
+      }
+
+      .codes-list {
+        gap: 0.3rem;
+      }
+
+      .code-item {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -152,6 +426,117 @@
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+ <div class="search-section">
+    <div class="search-container">
+      <h1 class="search-title">SOFA Search</h1>
+      <div class="search-box">
+        <input type="text" id="searchInput" class="search-input" placeholder="Enter chair code (e.g., CH001, CH002, CH003)">
+        <button id="searchBtn" class="search-btn">Search</button>
+      </div>
+    </div>
+
+<div class="available-codes">
+  <div class="codes-title">Available Chair Codes (Click to Search)</div>
+  <div class="codes-list">
+    <div class="code-item" onclick="searchProduct('SF001')">SF001</div>
+    <div class="code-item" onclick="searchProduct('SF002')">SF002</div>
+    <div class="code-item" onclick="searchProduct('SF003')">SF003</div>
+    <div class="code-item" onclick="searchProduct('SF004')">SF004</div>
+    <div class="code-item" onclick="searchProduct('SF005')">SF005</div>
+    <div class="code-item" onclick="searchProduct('SF006')">SF006</div>
+    <div class="code-item" onclick="searchProduct('SF007')">SF007</div>
+    <div class="code-item" onclick="searchProduct('SF008')">SF008</div>
+    <div class="code-item" onclick="searchProduct('SF009')">SF009</div>
+    <div class="code-item" onclick="searchProduct('SF010')">SF010</div>
+    <div class="code-item" onclick="searchProduct('SF011')">SF011</div>
+    <div class="code-item" onclick="searchProduct('SF012')">SF012</div>
+    <div class="code-item" onclick="searchProduct('SF013')">SF013</div>
+    <div class="code-item" onclick="searchProduct('SF014')">SF014</div>
+    <div class="code-item" onclick="searchProduct('SF015')">SF015</div>
+    <div class="code-item" onclick="searchProduct('SF016')">SF016</div>
+    <div class="code-item" onclick="searchProduct('SF017')">SF017</div>
+    <div class="code-item" onclick="searchProduct('SF018')">SF018</div>
+    <div class="code-item" onclick="searchProduct('SF019')">SF019</div>
+    <div class="code-item" onclick="searchProduct('SF020')">SF020</div>
+  </div>
+</div>
+
+
+
+    <div id="productResult" class="product-result">
+      <div class="product-header">
+        <div class="product-code" id="productCode">Product Code: </div>
+      </div>
+      <div class="product-content">
+        <div class="product-image">
+          <img id="productImage" class="product-img" src="" alt="Chair Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-name" id="productName"></h2>
+          
+          <div class="detail-row">
+            <span class="detail-label">Category:</span>
+            <span class="detail-value" id="productCategory">Chair</span>
+          </div>
+          
+          <div class="detail-row">
+            <span class="detail-label">Material:</span>
+            <span class="detail-value" id="productMaterial"></span>
+          </div>
+          
+          <div class="detail-row">
+            <span class="detail-label">Warranty:</span>
+            <span class="detail-value">
+              <span class="warranty-badge" id="productWarranty"></span>
+            </span>
+          </div>
+          
+          <div class="detail-row" id="discountRow" style="display: none;">
+            <span class="detail-label">Discount:</span>
+            <span class="detail-value">
+              <span class="discount-badge" id="productDiscount"></span>
+            </span>
+          </div>
+          
+          <div class="detail-row">
+            <span class="detail-label">Original Price:</span>
+            <span class="detail-value original-price" id="originalPrice"></span>
+          </div>
+          
+          <div class="detail-row">
+            <span class="detail-label">Current Price:</span>
+            <span class="detail-value price" id="currentPrice"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="noResult" class="no-result">
+      <p>❌ SOFA not found. Please check the code and try again.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
@@ -168,6 +553,273 @@
         navMenu.classList.remove('active');
       });
     });
+
+
+
+
+
+
+
+// Chair products database
+const chairProducts = {
+  'SF001': {
+    name: 'Executive Office Chair',
+    material: 'Leather & Steel',
+    image: './assets/SF1.jpg',
+    originalPrice: 15000,
+    currentPrice: 12000,
+    discount: '20% OFF',
+    warranty: '2 Years'
+  },
+  'SF002': {
+    name: 'Gaming Chair Pro',
+    material: 'PU Leather & Foam',
+    image: './assets/SF2.jpg',
+    originalPrice: 18000,
+    currentPrice: 14400,
+    discount: '20% OFF',
+    warranty: '1 Year'
+  },
+  'SF003': {
+    name: 'Ergonomic Work Chair',
+    material: 'Mesh & Aluminum',
+    image: './assets/SF3.jpg',
+    originalPrice: 12000,
+    currentPrice: 12000,
+    discount: null,
+    warranty: '3 Years'
+  },
+  'SF004': {
+    name: 'Wooden Dining Chair',
+    material: 'Solid Wood',
+    image: './assets/SF4.jpg',
+    originalPrice: 8000,
+    currentPrice: 6000,
+    discount: '25% OFF',
+    warranty: '5 Years'
+  },
+  'SF005': {
+    name: 'Luxury Recliner Chair',
+    material: 'Premium Leather',
+    image: './assets/SF5.jpg',
+    originalPrice: 25000,
+    currentPrice: 20000,
+    discount: '20% OFF',
+    warranty: '7 Years'
+  },
+  'SF006': {
+    name: 'Modern Accent Chair',
+    material: 'Fabric & Wood',
+    image: './assets/SF6.jpg',
+    originalPrice: 10000,
+    currentPrice: 10000,
+    discount: null,
+    warranty: '2 Years'
+  },
+  'SF007': {
+    name: 'Classic Rocking Chair',
+    material: 'Teak Wood',
+    image: './assets/SF7.jpg',
+    originalPrice: 12000,
+    currentPrice: 9500,
+    discount: '20% OFF',
+    warranty: '4 Years'
+  },
+  'SF008': {
+    name: 'Plastic Outdoor Chair',
+    material: 'Polypropylene',
+    image: './assets/SF8.jpg',
+    originalPrice: 2500,
+    currentPrice: 2000,
+    discount: '20% OFF',
+    warranty: '1 Year'
+  },
+  'SF009': {
+    name: 'Minimalist Lounge Chair',
+    material: 'Steel & Fabric',
+    image: './assets/SF9.jpg',
+    originalPrice: 14000,
+    currentPrice: 11200,
+    discount: '20% OFF',
+    warranty: '3 Years'
+  },
+  'SF010': {
+    name: 'Kids Study Chair',
+    material: 'Plastic & Metal',
+    image: './assets/SF10.jpg',
+    originalPrice: 4000,
+    currentPrice: 3500,
+    discount: '12% OFF',
+    warranty: '2 Years'
+  },
+  'SF011': {
+    name: 'Cafe Style Chair',
+    material: 'Bentwood & Metal',
+    image: './assets/SF11.jpg',
+    originalPrice: 6000,
+    currentPrice: 4800,
+    discount: '20% OFF',
+    warranty: '3 Years'
+  },
+  'SF012': {
+    name: 'Executive Mesh Chair',
+    material: 'Mesh & Nylon',
+    image: './assets/SF12.jpg',
+    originalPrice: 16000,
+    currentPrice: 16000,
+    discount: null,
+    warranty: '3 Years'
+  },
+  'SF013': {
+    name: 'Velvet Lounge Chair',
+    material: 'Velvet & Brass Legs',
+    image: './assets/SF13.jpg',
+    originalPrice: 22000,
+    currentPrice: 17600,
+    discount: '20% OFF',
+    warranty: '5 Years'
+  },
+  'SF014': {
+    name: 'Bar Stool Chair',
+    material: 'Wood & Steel',
+    image: './assets/SF14.jpg',
+    originalPrice: 5000,
+    currentPrice: 4000,
+    discount: '20% OFF',
+    warranty: '2 Years'
+  },
+  'SF015': {
+    name: 'Reclining Gaming Chair',
+    material: 'PU Leather',
+    image: './assets/SF15.jpg',
+    originalPrice: 20000,
+    currentPrice: 16000,
+    discount: '20% OFF',
+    warranty: '3 Years'
+  },
+  'SF016': {
+    name: 'Traditional Armchair',
+    material: 'Cotton & Wood',
+    image: './assets/SF16.jpg',
+    originalPrice: 12000,
+    currentPrice: 10800,
+    discount: '10% OFF',
+    warranty: '4 Years'
+  },
+  'SF017': {
+    name: 'Folding Study Chair',
+    material: 'Metal & Plastic',
+    image: './assets/SF17.jpg',
+    originalPrice: 3500,
+    currentPrice: 3000,
+    discount: '15% OFF',
+    warranty: '1 Year'
+  },
+  'SF018': {
+    name: 'Contemporary Lounge Chair',
+    material: 'Steel Frame & Fabric',
+    image: './assets/SF18.jpg',
+    originalPrice: 18000,
+    currentPrice: 16200,
+    discount: '10% OFF',
+    warranty: '3 Years'
+  },
+  'SF019': {
+    name: 'Wicker Patio Chair',
+    material: 'Rattan & Steel',
+    image: './assets/SF19.jpg',
+    originalPrice: 7000,
+    currentPrice: 5600,
+    discount: '20% OFF',
+    warranty: '2 Years'
+  },
+  'SF020': {
+    name: 'Luxury Velvet Armchair',
+    material: 'Velvet & Gold Steel',
+    image: './assets/SF20.jpg',
+    originalPrice: 28000,
+    currentPrice: 22400,
+    discount: '20% OFF',
+    warranty: '6 Years'
+  }
+};
+
+
+
+
+    function searchProduct(code = null) {
+      const searchInput = document.getElementById('searchInput');
+      const productResult = document.getElementById('productResult');
+      const noResult = document.getElementById('noResult');
+      
+      // Get search code from parameter or input
+      const searchCode = code || searchInput.value.trim().toUpperCase();
+      
+      if (code) {
+        searchInput.value = code;
+      }
+      
+      // Hide previous results
+      productResult.classList.remove('show');
+      noResult.classList.remove('show');
+      
+      if (!searchCode) {
+        return;
+      }
+      
+      // Check if product exists
+      if (chairProducts[searchCode]) {
+        displayProduct(chairProducts[searchCode], searchCode);
+      } else {
+        noResult.classList.add('show');
+      }
+    }
+
+    function displayProduct(product, code) {
+      // Update product information
+      document.getElementById('productCode').textContent = `Product Code: ${code}`;
+      document.getElementById('productName').textContent = product.name;
+      document.getElementById('productMaterial').textContent = product.material;
+      document.getElementById('productImage').src = product.image;
+      document.getElementById('productWarranty').textContent = product.warranty;
+      document.getElementById('originalPrice').textContent = `Rs. ${product.originalPrice.toLocaleString()}`;
+      document.getElementById('currentPrice').textContent = `Rs. ${product.currentPrice.toLocaleString()}`;
+      
+      // Handle discount display
+      const discountRow = document.getElementById('discountRow');
+      const discountElement = document.getElementById('productDiscount');
+      
+      if (product.discount) {
+        discountElement.textContent = product.discount;
+        discountRow.style.display = 'flex';
+      } else {
+        discountRow.style.display = 'none';
+      }
+      
+      // Show product result
+      document.getElementById('productResult').classList.add('show');
+    }
+
+    // Event listeners
+    document.getElementById('searchBtn').addEventListener('click', () => searchProduct());
+    
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        searchProduct();
+      }
+    });
+
+    // Format price display
+    function formatPrice(price) {
+      return price.toLocaleString();
+    }
+
+
+
+
+
+
+
   </script>
 </body>
 </html>
