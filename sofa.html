@@ -228,8 +228,8 @@
     .product-img {
       width: 100%;
       max-width: 400px;
-      height: 520px;
-      object-fit: cover;
+      height: 300px;
+      object-fit: contain;
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
@@ -469,8 +469,14 @@
     <div class="code-item" onclick="searchProduct('SF018')">SF018</div>
     <div class="code-item" onclick="searchProduct('SF019')">SF019</div>
     <div class="code-item" onclick="searchProduct('SF020')">SF020</div>
+    <div class="code-item" onclick="searchProduct('SF021')">SF021</div>
+    <div class="code-item" onclick="searchProduct('SF022')">SF022</div>
+    <div class="code-item" onclick="searchProduct('SF023')">SF023</div>
+    <div class="code-item" onclick="searchProduct('SF024')">SF024</div>
+    <div class="code-item" onclick="searchProduct('SF025')">SF025</div>
   </div>
 </div>
+
 
 
 
@@ -565,7 +571,7 @@ const chairProducts = {
   'SF001': {
     name: 'Executive Office Chair',
     material: 'Leather & Steel',
-    image: './assets/SF1.jpg',
+    image: './assets/sf1.jpg',
     originalPrice: 15000,
     currentPrice: 12000,
     discount: '20% OFF',
@@ -574,7 +580,7 @@ const chairProducts = {
   'SF002': {
     name: 'Gaming Chair Pro',
     material: 'PU Leather & Foam',
-    image: './assets/SF2.jpg',
+    image: './assets/sf2.jpg',
     originalPrice: 18000,
     currentPrice: 14400,
     discount: '20% OFF',
@@ -583,7 +589,7 @@ const chairProducts = {
   'SF003': {
     name: 'Ergonomic Work Chair',
     material: 'Mesh & Aluminum',
-    image: './assets/SF3.jpg',
+    image: './assets/sf3.jpg',
     originalPrice: 12000,
     currentPrice: 12000,
     discount: null,
@@ -592,7 +598,7 @@ const chairProducts = {
   'SF004': {
     name: 'Wooden Dining Chair',
     material: 'Solid Wood',
-    image: './assets/SF4.jpg',
+    image: './assets/sf4.jpg',
     originalPrice: 8000,
     currentPrice: 6000,
     discount: '25% OFF',
@@ -601,7 +607,7 @@ const chairProducts = {
   'SF005': {
     name: 'Luxury Recliner Chair',
     material: 'Premium Leather',
-    image: './assets/SF5.jpg',
+    image: './assets/sf5.jpg',
     originalPrice: 25000,
     currentPrice: 20000,
     discount: '20% OFF',
@@ -610,7 +616,7 @@ const chairProducts = {
   'SF006': {
     name: 'Modern Accent Chair',
     material: 'Fabric & Wood',
-    image: './assets/SF6.jpg',
+    image: './assets/sf6.jpg',
     originalPrice: 10000,
     currentPrice: 10000,
     discount: null,
@@ -619,7 +625,7 @@ const chairProducts = {
   'SF007': {
     name: 'Classic Rocking Chair',
     material: 'Teak Wood',
-    image: './assets/SF7.jpg',
+    image: './assets/sf7.jpg',
     originalPrice: 12000,
     currentPrice: 9500,
     discount: '20% OFF',
@@ -628,7 +634,7 @@ const chairProducts = {
   'SF008': {
     name: 'Plastic Outdoor Chair',
     material: 'Polypropylene',
-    image: './assets/SF8.jpg',
+    image: './assets/sf8.jpg',
     originalPrice: 2500,
     currentPrice: 2000,
     discount: '20% OFF',
@@ -637,7 +643,7 @@ const chairProducts = {
   'SF009': {
     name: 'Minimalist Lounge Chair',
     material: 'Steel & Fabric',
-    image: './assets/SF9.jpg',
+    image: './assets/sf9.jpg',
     originalPrice: 14000,
     currentPrice: 11200,
     discount: '20% OFF',
@@ -646,7 +652,7 @@ const chairProducts = {
   'SF010': {
     name: 'Kids Study Chair',
     material: 'Plastic & Metal',
-    image: './assets/SF10.jpg',
+    image: './assets/sf10.jpg',
     originalPrice: 4000,
     currentPrice: 3500,
     discount: '12% OFF',
@@ -655,7 +661,7 @@ const chairProducts = {
   'SF011': {
     name: 'Cafe Style Chair',
     material: 'Bentwood & Metal',
-    image: './assets/SF11.jpg',
+    image: './assets/sf11.jpg',
     originalPrice: 6000,
     currentPrice: 4800,
     discount: '20% OFF',
@@ -664,7 +670,7 @@ const chairProducts = {
   'SF012': {
     name: 'Executive Mesh Chair',
     material: 'Mesh & Nylon',
-    image: './assets/SF12.jpg',
+    image: './assets/sf12.jpg',
     originalPrice: 16000,
     currentPrice: 16000,
     discount: null,
@@ -673,7 +679,7 @@ const chairProducts = {
   'SF013': {
     name: 'Velvet Lounge Chair',
     material: 'Velvet & Brass Legs',
-    image: './assets/SF13.jpg',
+    image: './assets/sf13.jpg',
     originalPrice: 22000,
     currentPrice: 17600,
     discount: '20% OFF',
@@ -682,7 +688,7 @@ const chairProducts = {
   'SF014': {
     name: 'Bar Stool Chair',
     material: 'Wood & Steel',
-    image: './assets/SF14.jpg',
+    image: './assets/sf14.jpg',
     originalPrice: 5000,
     currentPrice: 4000,
     discount: '20% OFF',
@@ -691,7 +697,7 @@ const chairProducts = {
   'SF015': {
     name: 'Reclining Gaming Chair',
     material: 'PU Leather',
-    image: './assets/SF15.jpg',
+    image: './assets/sf15.jpg',
     originalPrice: 20000,
     currentPrice: 16000,
     discount: '20% OFF',
@@ -700,7 +706,7 @@ const chairProducts = {
   'SF016': {
     name: 'Traditional Armchair',
     material: 'Cotton & Wood',
-    image: './assets/SF16.jpg',
+    image: './assets/sf16.jpg',
     originalPrice: 12000,
     currentPrice: 10800,
     discount: '10% OFF',
@@ -709,7 +715,7 @@ const chairProducts = {
   'SF017': {
     name: 'Folding Study Chair',
     material: 'Metal & Plastic',
-    image: './assets/SF17.jpg',
+    image: './assets/sf17.jpg',
     originalPrice: 3500,
     currentPrice: 3000,
     discount: '15% OFF',
@@ -718,7 +724,7 @@ const chairProducts = {
   'SF018': {
     name: 'Contemporary Lounge Chair',
     material: 'Steel Frame & Fabric',
-    image: './assets/SF18.jpg',
+    image: './assets/sf18.jpg',
     originalPrice: 18000,
     currentPrice: 16200,
     discount: '10% OFF',
@@ -727,7 +733,7 @@ const chairProducts = {
   'SF019': {
     name: 'Wicker Patio Chair',
     material: 'Rattan & Steel',
-    image: './assets/SF19.jpg',
+    image: './assets/sf19.jpg',
     originalPrice: 7000,
     currentPrice: 5600,
     discount: '20% OFF',
@@ -736,13 +742,59 @@ const chairProducts = {
   'SF020': {
     name: 'Luxury Velvet Armchair',
     material: 'Velvet & Gold Steel',
-    image: './assets/SF20.jpg',
+    image: './assets/sf20.jpg',
     originalPrice: 28000,
     currentPrice: 22400,
     discount: '20% OFF',
     warranty: '6 Years'
+  },
+  'SF021': {
+    name: 'Adjustable Study Chair',
+    material: 'Plastic & Steel',
+    image: './assets/sf21.jpg',
+    originalPrice: 6000,
+    currentPrice: 5400,
+    discount: '10% OFF',
+    warranty: '2 Years'
+  },
+  'SF022': {
+    name: 'Designer Wingback Chair',
+    material: 'Velvet & Wood',
+    image: './assets/sf22.jpg',
+    originalPrice: 25000,
+    currentPrice: 20000,
+    discount: '20% OFF',
+    warranty: '5 Years'
+  },
+  'SF023': {
+    name: 'Outdoor Lounge Chair',
+    material: 'Aluminum & Fabric',
+    image: './assets/sf23.jpg',
+    originalPrice: 15000,
+    currentPrice: 12750,
+    discount: '15% OFF',
+    warranty: '3 Years'
+  },
+  'SF024': {
+    name: 'Traditional Wooden Chair',
+    material: 'Rosewood',
+    image: './assets/sf24.jpg',
+    originalPrice: 9000,
+    currentPrice: 7200,
+    discount: '20% OFF',
+    warranty: '6 Years'
+  },
+  'SF025': {
+    name: 'Luxury Massage Chair',
+    material: 'PU Leather & Electronics',
+    image: './assets/sf25.jpg',
+    originalPrice: 55000,
+    currentPrice: 44000,
+    discount: '20% OFF',
+    warranty: '8 Years'
   }
 };
+
 
 
 
